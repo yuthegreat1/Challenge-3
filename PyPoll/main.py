@@ -27,3 +27,12 @@ print("-------------------------")
 print("Winner: "+ winner)
 print("-------------------------")
 
+with open('analysis.txt', 'w') as f:
+    f.write("Election Results\n")
+    f.write("-------------------------\n")
+    f.write("Total Votes: " + str(total_votes)+"\n")
+    f.write("-------------------------\n")
+    f.write(str(percentage)+"\n")
+    f.write("-------------------------")
+    f.write("Winner: "+ str(winner)+"\n")
+    f.write("-------------------------")
